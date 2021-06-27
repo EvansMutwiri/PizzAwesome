@@ -5,7 +5,7 @@
 /* font-family: 'Spartan', sans-serif; */
 
 body {
-  font-family: "Reem Kufi", sans-serif;
+  font-family: 'Spartan', sans-serif;
   overflow-x: hidden;
   color: #ffc33b;
   background-color: #282f3b;
@@ -55,7 +55,7 @@ body {
   padding-top: 1em;
 }
 
-.box-with-text-stripped {
+.stripped {
   background-image: -webkit-linear-gradient(#EFB83A 50%, white 50%);
   background-position: 0 0;
   -webkit-background-clip: text;
@@ -64,7 +64,8 @@ body {
   -webkit-animation: stripes 3s linear infinite;
   animation: stripes 3s linear infinite;
   -webkit-text-fill-color: transparent; }
-.box-with-text-stripped {
+
+.stripped {
  
   overflow: hidden;
   text-transform: uppercase;
