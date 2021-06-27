@@ -5,7 +5,7 @@
 /* font-family: 'Spartan', sans-serif; */
 
 body {
-  /* font-family: "Reem Kufi", sans-serif; */
+  font-family: "Reem Kufi", sans-serif;
   overflow-x: hidden;
   color: #ffc33b;
   background-color: #282f3b;
@@ -13,7 +13,7 @@ body {
 
 .navbar {
   background-color: #282f3b;
-  color: #fff;
+  color: #EFB83A;
 }
 .navbar .brand-navbar img:hover {
   opacity: 0.7;
@@ -22,7 +22,7 @@ body {
   padding: 0px 30px 0px 0px;
 }
 .navbar ul li a {
-  color: white;
+  color: #EFB83A;
   margin: 10px 0px 0px 10px;
   text-transform: uppercase;
   font-size: 12px;
@@ -32,16 +32,16 @@ body {
   padding-left: 5px;
 }
 .navbar ul li a:hover {
-  color: #15b000;
+  color: #EFB83A;
 }
 .navbar ul li.active > a {
-  color: #15b000;
+  color: #EFB83A;
   font-weight: bold;
   font-size: 12px;
-  border-left: 3px solid #15b000;
+  border-left: 3px solid #EFB83A;
 }
 .iconStyle {
-  color: #15b000;
+  color: #EFB83A;
 }
 
 
@@ -52,8 +52,30 @@ body {
 }
 
 .hero h1 {
-  padding-top: 4em;
+  padding-top: 1em;
 }
+
+.box-with-text-stripped {
+  background-image: -webkit-linear-gradient(#EFB83A 50%, white 50%);
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  background-size: 100% 15px;
+  background-repeat: repeat;
+  -webkit-animation: stripes 3s linear infinite;
+  animation: stripes 3s linear infinite;
+  -webkit-text-fill-color: transparent; }
+.box-with-text-stripped {
+ 
+  overflow: hidden;
+  text-transform: uppercase;
+  white-space: nowrap;
+  }
+  @-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
 
 @media (max-width: 480px) {
   .navbar-collapse.collapse:not(.show) {
