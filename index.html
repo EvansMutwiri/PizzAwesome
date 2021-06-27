@@ -101,24 +101,24 @@
                     <!-- Carousel items -->
                     <div class="carousel-inner">
 
-                        <div class="item active">
+                        <div class="item active container-fluid">
                             <div class="row card-deck">
-                                <div class="col-md-4"><a href="#" class="card"><img class="card-img-top"
+                                <div style="padding: 2em;"class="col-md-4"><a href="#" class="card"><img class="card-img-top img-responsive"
                                             src="images/menu-1.png" alt="Image"></a>
                                     <div class="card-body">
-                                        <h5 class="card-title">Chizaa</h5>
+                                        <h3 class="card-title">Chizaa <br><a href="#"><button type="button" class="btn-primary">Order</button></a></h3>
                                     </div>
                                 </div>
-                                <div class="col-md-4"><a href="#" class="card"><img class="card-img-top"
+                                <div style="padding: 2em;" class="col-md-4"><a href="#" class="card"><img class="card-img-top img-responsive"
                                             src="images/menu-2.png" alt="Image"></a>
                                     <div class="card-body">
-                                        <h5 class="card-title">Lord of the rings</h5>
+                                        <h3 class="card-title">Lord of the rings <br><a href="#"><button type="button" class="btn-primary">Order</button></a></h3>
                                     </div>
                                 </div>
-                                <div class="col-md-4"><a href="#" class="card"><img class="card-img-top"
+                                <div style="padding: 2em;" class="col-md-4"><a href="#" class="card"><img class="card-img-top img-responsive"
                                             src="images/menu-6.png" alt="Image"></a>
                                     <div class="card-body">
-                                        <h5 class="card-title">Memberz Only</h5>
+                                        <h3 class="card-title"> Chicken <br><a href="#"><button type="button" class="btn-primary">Order</button></a></h3>
                                     </div>
                                 </div>/
                             </div>
@@ -128,22 +128,22 @@
 
                         <div class="item">
                             <div class="row">
-                                <div class="col-md-4"><a href="#" class="card card-img-top"><img src="images/menu-4.png"
+                                <div style="padding: 2em;" class="col-md-4"><a href="#" class="card card-img-top img-responsive"><img src="images/menu-4.png"
                                             alt="Image"></a>
                                     <div class="card-body">
-                                        <h5 class="card-title">Chicken</h5>
+                                        <h3 class="card-title">Memberz Only <br><a href="#"><button type="button" class="btn-primary">Order</button></a></h3>
                                     </div>
                                 </div>
-                                <div class="col-md-4"><a href="#" class="card card-img-top"><img src="images/menu-5.png"
+                                <div style="padding: 2em;" class="col-md-4"><a href="#" class="card card-img-top img-responsive"><img src="images/menu-5.png"
                                             alt="Image"></a>
                                     <div class="card-body">
-                                        <h5 class="card-title">Southern</h5>
+                                        <h3 class="card-title">Southern <br><a href="#"><button type="button" class="btn-primary">Order</button></a></h3>
                                     </div>
                                 </div>
-                                <div class="col-md-4"><a href="#" class="card card-img-top"><img src="images/menu-3.png"
+                                <div style="padding: 2em;" class="col-md-4"><a href="#" class="card card-img-top img-responsive"><img src="images/menu-3.png"
                                             alt="Image"></a>
                                     <div class="card-body">
-                                        <h5 class="card-title">Pepperoni</h5>
+                                        <h3 class="card-title">Pepperoni <br> <a href="#"><button type="button" class="btn-primary">Order</button></a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -154,11 +154,11 @@
 
                     </div>
                     <!--.carousel-inner-->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <a class="left carousel-control" href="#Carousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <a class="right carousel-control" href="#Carousel" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -172,66 +172,10 @@
     <!-- slides gallery -->
 
     <!-- orders -->
-    <div class="orders container-fluid"
-        style="background-image: url(images/bg-1.png);height: 60vh; width: 48vw; font-size: 1.5em;">
-        <div class="overlay" style="background-color: rgba(255, 0, 0, 0.534); height: 50vh;">
-            <label for="Flavors">Select your flavour:</label>
-            <select name="" id="" class="form-select mb-3">
-                <option value="chicken">Chicken</option>
-                <option value="pepperoni">Pepperoni</option>
-                <option value="south">Southern</option>
-                <option value="chizaa">Chizaa</option>
-                <option value="memberz">Memberz Only</option>
-                <option value="rings">Lord of the Rings</option>
-            </select>
-
-            <!-- select size -->
-
-            <label for="select">Select Size</label>
-            <select class="form-select form-select-lg mb-3" id="size">
-                <option selected value="0">Select size here</option>
-                <option value="large">Large -- sh. 1000</option>
-                <option value="medium">Medium -- sh. 800</option>
-                <option value="small">Small -- sh. 500</option>
-                <option value="slice">Slice -- sh. 140</option>
-            </select>
-
-            <!-- Select Crust -->
-
-            <label for="crust">Choose your favorite Crust!</label>
-            <select class="form-select form-select-lg mb-3" id="crust">
-                <option selected value="0">Select your preferred crust!</option>
-                <option value="Crispy">Crispy -- sh. 200</option>
-                <option value="Stuffed">Stuffed -- sh. 150</option>
-                <option value="Thin-crust">Thin Crust -- sh. 150</option>
-                <option value="Gluten-free">Gluten-free-- sh. 180</option>
-                <option value="Flatbread">Flatbread -- sh. 180</option>
-            </select>
-
-            <!-- Select topping/s -->
-            <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
-            <div class="form-check form-check-inline">
-                <input type="checkbox" class="form-check-input" id="mushroom" value="mushroom" name="toppings">
-                <label class="custom-control-label" for="mushroom">Mushroom</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input type="checkbox" class="form-check-input" id="cheese" value="cheese" name="toppings">
-                <label class="custom-control-label" for="cheese">Extra cheese</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input type="checkbox" class="form-check-input" id="onion" value="onion" name="toppings">
-                <label class="custom-control-label" for="Onion">Onion</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="sausage" value="sausage">
-                <label class="form-check-label" for="sausage">Sausage</label>
-            </div>
-
-            <button type="submit" class="btn btn-warning proceed">Proceed</button>
-
-        </div>
-    </div>
+    
     <!-- orders -->
+
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/js/main.js"></script>
