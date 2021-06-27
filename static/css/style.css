@@ -1,4 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* font-family: 'Reem Kufi', sans-serif; */
+/* font-family: 'Spartan', sans-serif; */
+
+body {
+  /* font-family: "Reem Kufi", sans-serif; */
+  overflow-x: hidden;
+  color: #ffc33b;
+  background-color: #282f3b;
+}
+
+.navbar {
+  background-color: #282f3b;
+  color: #fff;
+}
+.navbar .brand-navbar img:hover {
+  opacity: 0.7;
+}
+.navbar ul {
+  padding: 0px 30px 0px 0px;
+}
+.navbar ul li a {
+  color: white;
+  margin: 10px 0px 0px 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.navbar ul li a .fas {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.navbar ul li a:hover {
+  color: #15b000;
+}
+.navbar ul li.active > a {
+  color: #15b000;
+  font-weight: bold;
+  font-size: 12px;
+  border-left: 3px solid #15b000;
+}
+.iconStyle {
+  color: #15b000;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.hero h1 {
+  padding-top: 4em;
+}
 
