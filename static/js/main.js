@@ -10,7 +10,7 @@ function Getpizza(name, size, crust, topping, total) {
 
 // proceed button
 $(document).ready(function () {
-    alert ("WELCOME TO PIZZAWESOME").timeOut(5000)
+  alert("WELCOME TO PIZZAWESOME").timeOut(5000);
 
   $("button.proceed").click(function (event) {
     let pizzName = $(".name option:selected").val();
@@ -31,11 +31,11 @@ $(document).ready(function () {
         console.log(price);
         break;
       case "medium":
-        price = 0;
+        price = 900;
         console.log("The price is " + price);
         break;
       case "small":
-        price = 600;
+        price = 400;
         console.log(price);
       default:
         console.log("error");
@@ -45,10 +45,10 @@ $(document).ready(function () {
         crust_price = 0;
         break;
       case "Crispy":
-        crust_price = 200;
+        crust_price = 0;
         break;
       case "Stuffed":
-        crust_price = 250;
+        crust_price = 100;
         break;
       case "Gluten-free":
         crust_price = 180;
@@ -101,11 +101,11 @@ $(document).ready(function () {
           console.log(price);
           break;
         case "medium":
-          price = 850;
+          price = 900;
           console.log("The price is " + price);
           break;
         case "small":
-          price = 600;
+          price = 400;
           console.log(price);
         default:
           console.log("error");
