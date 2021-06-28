@@ -10,7 +10,6 @@ function Getpizza(name, size, crust, topping, total) {
 
 // proceed button
 $(document).ready(function () {
-  alert("WELCOME TO PIZZAWESOME").timeOut(5000);
 
   $("button.proceed").click(function (event) {
     let pizzName = $(".name option:selected").val();
