@@ -104,97 +104,114 @@
 
     <!-- cards -->
 
-    <div id="order">
-
-        <div class="jumbotron jumbotron-fluid">
-            <div class="row">
-                <div class="col-md-9">
-                    <h1 class="card-title"><em>ORDER PIZZA</h1>
+    <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now"> 
+        <h2>Order Here</h2>
+      </div>
+      <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+      <div class="row">
+          <div class="col-sm-5">
+            <form action="">
+                <label for="select">Select Your Flavor</label>
+                <select class="browser-default custom-select custom-select-md mb-3 name">
+                  <!-- choose option-->
+                  <option value="Pepperoni">Pepperoni</option>
+                  <option value="Chicken Tikka">Chicken Tikka</option>
+                  <option value="Xtra Chizz">Xtra Chizz</option>
+                  <option value="Fast Food Q">Fast Food Q</option>
+                  <option value="Members Only">Members Only</option>
+                  <option value="Soul Food">Soul Food</option>
+                </select>
+              <label for="select">Select Size</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                <option selected value="0">Select size here</option>
+                <option value="large">Large -- sh. 1200</option>
+                <option value="medium">Medium -- sh. 850</option>
+                <option value="small">Small -- sh. 600</option>
+              </select>
+              <label for="crust">Choose your favorite Crust!</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                    <option selected value="0">Select your preferred crust!</option>
+                  <option value="Crispy">Crispy -- sh. 200</option>
+                  <option value="Stuffed">Stuffed -- sh. 150</option>
+                  <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                </select>
+              <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                  <label class="custom-control-label" for="Sausage">Sausage</label>
                 </div>
-            </div>
-            </di>
-            <div class="container">
-                <div class="card">
-                    <div class="row container">
-                        <div class="col-md-6">
-                            <form class="form-group" id="pizzaOrder">
-                                <div id="pizzaSize">
-                                    <label for="">select Pizza Size</label>
-                                    <select required class="form-control" id="size">
-                                        <option></option>
-                                        <option value="Small">Small pizza</option>
-                                        <option value="Medium">Medium pizza</option>
-                                        <option value="Large">Large pizza</option>
-                                    </select>
-                                </div><br>
-                                <div id="pizzaCrusts">
-                                    <label for="">Choose Pizza Crust</label>
-                                    <select required class="form-control" id="crust">
-                                        <option></option>
-                                        <option value="crispy">crispy pizza</option>
-                                        <option value="stuffed">stuffed pizza</option>
-                                        <option value="gluten">glutten pizza</option>
-                                    </select>
-                                </div><br>
-                                <div id="pizzaTopping1">
-                                    <label for="">Choose Pizza Topping1: </label>
-                                    <select required class="form-control" id="Topping1">
-                                        <option></option>
-                                        <option value="Green">Green peper</option>
-                                        <option value="Mushroom">Mushroom</option>
-                                        <option value="Chicken">Cheese</option>
-                                        <option value="Beef">Black Olive</option>
-                                        <option value="Sausage">Red Onions</option>
-                                    </select>
-                                </div><br>
-                                <div id="pizzaTopping2">
-                                    <label for="">Choose Pizza Topping2: </label>
-                                    <select required class="form-control" id="Topping2">
-                                        <option></option>
-                                        <option value="Peparoni">peparoni</option>
-                                        <option value="Sausage">tomatoes</option>
-                                        <option value="Sausage">Bacon</option>
-                                    </select>
-                                </div><br>
-
-
-                                <div class="pizzaNumber">
-                                    <label for="number">Number of pizza you want to order</label>
-                                    <input required type="number" class="form-control" id="pizza-number" min="1"
-                                        placeholder="u can order any number of pizza here">
-                                </div><br>
-
-                                <button type="submit" class="btn btn-info" id="send">Order</button>
-                            </form>
-                        </div>
-                        <div class="col-md-6" id="price">
-                            <h4>Price: <span id="totalPizzaCost"></span></h4>
-                            <div id="order-details">
-                                <p><a id="pizzaDetails">Pizza Details</a></p>
-                                <p id="pizzaDetail">
-                                </p>
-                                <div class="deliver-pick">
-                                    <button type="btn" class="btn btn-primary" id="deliver">Delivery</button>
-                                    <ul id="deliveryPrice"></ul>
-
-                                    <button type="btn" class="btn btn-primary" id="pickup">Pick up</button>
-                                </div><br>
-                            </div>
-
-                            <button type="btn" class="btn btn-primary" id="checkout">Checkout</button>
-                            <h3><span id="check"></span></h3>
-                        </div>
-                    </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                  <label class="custom-control-label" for="Bacon">Bacon</label>
                 </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                  <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                </div>
+                <br><br>
+              <button type="submit" class="btn btn-orange proceed">Proceed</button>
+              
+            </form>
+          </div>
+          <div class="col-sm-7">
+            <div id="information">
+              <p>Your order has been taken and will be delivered within one hour of placing.</p>
+              <p>Please ensure you have the exact amount in cash for cash on delivery.</p>
+              <p>Incase of any comment of complaint, Please <a href="#contactus">reach out</a> to us as fast as possible.</p>
             </div>
-        </div>
+            <div class="choice">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzaname"></td>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>                  
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p> 
+                <p id="adddelivery">Delivery will cost sh. 150</p>
+                <p id="confirmorder"></p>
+              </div>
+              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange home-delivery">Home delivery?</button>
+            </div>
+            <div class="delivery">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+      </div>
     </div>
-
-
+  </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/js/main.js"></script>
+    <script src="static/js/bootstrap.js"></script>
 </body>
 
 </html>
