@@ -73,7 +73,8 @@
                     delicious food.</p>
                 <h1 style="text-align: center;" class="stripped">OFFER!! OFFER!!</h1>
                 <h3 style="text-align: center;"> Enjoy all our flavors at <br> <span>large Ksh 1200</span> <br>
-                    <span>medium Ksh 900</span> <br> <span>small Ksh 400</span></h3>
+                    <span>medium Ksh 900</span> <br> <span>small Ksh 400</span>
+                </h3>
                 <button id="order" class="btn btn-primary stretched-link">
                     Order Now
                 </button>
@@ -91,7 +92,8 @@
             </div>
             <div class="col-md-6">
                 <div class="card-body">
-                    <p class="card-text" style="font-size: 2em;">We use the best ingredients on our custom recipes to deliver you mouth
+                    <p class="card-text" style="font-size: 2em;">We use the best ingredients on our custom recipes to
+                        deliver you mouth
                         watering pizzas that will leave you wanting more.</p>
 
                     <a href="#" class="btn btn-primary stretched-link">View gallery</a>
@@ -101,91 +103,93 @@
     </div>
 
     <!-- cards -->
-    <!-- orders -->
 
-    <div class="container-fluid" style="margin: 5em;">
-        <div class="">
-            
-            <section class="container content-section">
-        <h2 class="section-header">Menu</h2>
-        <div class="shop-items row">
-            <div class="shop-item col-md-4">
-                <span class="shop-item-title">Chicken Tikka</span>
-                <img class="shop-item-image card card-img-top" src="images/menu-1.png">
-                <div class="shop-item-details">
-                    <select name="pets" id="pet-select">
-                        <option value="">--Please choose an option--</option>
-                        <option class="shop-item-price" value="large">1200</option>
-                        <option class="price-medium" value="900">medium</option>
-                        <option class="shop-item-price" value="600">small</option>
-                    </select>
-                    <span class="shop-item-price"></span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item col-md-4">
-                <span class="shop-item-title">Pepperoni</span>
-                <img class="shop-item-image card card-img-top" src="images/menu-2.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">Ksh 1200</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item col-md-4">
-                <span class="shop-item-title">Lord of the ringz</span>
-                <img class="shop-item-image card card-img-top" src="images/menu-3.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">Ksh 1200</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item col-md-4">
-                <span class="shop-item-title">Memberz Only</span>
-                <img class="shop-item-image card card-img-top" src="images/menu-4.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">Ksh 1200</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item col-md-4">
-                <span class="shop-item-title">Chizaa</span>
-                <img class="shop-item-image card card-img-top" src="images/menu-5.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">Ksh 1200</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item col-md-4">
-                <span class="shop-item-title">Southern</span>
-                <img class="shop-item-image card card-img-top" src="images/menu-6.png">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">Ksh 1200</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="order">
 
+        <div class="jumbotron jumbotron-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <h1 class="card-title"><em>ORDER PIZZA</h1>
+                </div>
+            </div>
+            </di>
+            <div class="container">
+                <div class="card">
+                    <div class="row container">
+                        <div class="col-md-6">
+                            <form class="form-group" id="pizzaOrder">
+                                <div id="pizzaSize">
+                                    <label for="">select Pizza Size</label>
+                                    <select required class="form-control" id="size">
+                                        <option></option>
+                                        <option value="Small">Small pizza</option>
+                                        <option value="Medium">Medium pizza</option>
+                                        <option value="Large">Large pizza</option>
+                                    </select>
+                                </div><br>
+                                <div id="pizzaCrusts">
+                                    <label for="">Choose Pizza Crust</label>
+                                    <select required class="form-control" id="crust">
+                                        <option></option>
+                                        <option value="crispy">crispy pizza</option>
+                                        <option value="stuffed">stuffed pizza</option>
+                                        <option value="gluten">glutten pizza</option>
+                                    </select>
+                                </div><br>
+                                <div id="pizzaTopping1">
+                                    <label for="">Choose Pizza Topping1: </label>
+                                    <select required class="form-control" id="Topping1">
+                                        <option></option>
+                                        <option value="Green">Green peper</option>
+                                        <option value="Mushroom">Mushroom</option>
+                                        <option value="Chicken">Cheese</option>
+                                        <option value="Beef">Black Olive</option>
+                                        <option value="Sausage">Red Onions</option>
+                                    </select>
+                                </div><br>
+                                <div id="pizzaTopping2">
+                                    <label for="">Choose Pizza Topping2: </label>
+                                    <select required class="form-control" id="Topping2">
+                                        <option></option>
+                                        <option value="Peparoni">peparoni</option>
+                                        <option value="Sausage">tomatoes</option>
+                                        <option value="Sausage">Bacon</option>
+                                    </select>
+                                </div><br>
+
+
+                                <div class="pizzaNumber">
+                                    <label for="number">Number of pizza you want to order</label>
+                                    <input required type="number" class="form-control" id="pizza-number" min="1"
+                                        placeholder="u can order any number of pizza here">
+                                </div><br>
+
+                                <button type="submit" class="btn btn-info" id="send">Order</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6" id="price">
+                            <h4>Price: <span id="totalPizzaCost"></span></h4>
+                            <div id="order-details">
+                                <p><a id="pizzaDetails">Pizza Details</a></p>
+                                <p id="pizzaDetail">
+                                </p>
+                                <div class="deliver-pick">
+                                    <button type="btn" class="btn btn-primary" id="deliver">Delivery</button>
+                                    <ul id="deliveryPrice"></ul>
+
+                                    <button type="btn" class="btn btn-primary" id="pickup">Pick up</button>
+                                </div><br>
+                            </div>
+
+                            <button type="btn" class="btn btn-primary" id="checkout">Checkout</button>
+                            <h3><span id="check"></span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    <!-- orders -->
 
-    <section class="container content-section">
-        <h2 class="section-header">CART</h2>
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-        </div>
-        <div class="cart-items">
-        </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">Ksh 0</span>
-        </div>
-        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-    </section>
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
