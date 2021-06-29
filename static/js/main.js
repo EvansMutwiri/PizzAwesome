@@ -219,3 +219,15 @@ $(document).ready(function () {
     event.preventDefault();
   });
 });
+
+$(document).ready(function () {
+  // $("#final-order").fadeOut(300);
+  $("#pizzatime").on("click", function () {
+    $("#final-order").fadeIn(300);
+    $("#pizzatime").slideToggle();
+  });
+  $("#final-order").on("click", function () {
+    $("#pizzatime").show().fadeIn(300);
+    $("#final-order").fadeOut();
+  });
+});

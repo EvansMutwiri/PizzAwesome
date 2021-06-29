@@ -1,10 +1,12 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* font-family: 'Reem Kufi', sans-serif; */
 /* font-family: 'Spartan', sans-serif; */
 * {
   font-size: 1em;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 body {
   font-family: "Spartan", sans-serif;
@@ -61,7 +63,7 @@ body {
   /* font-family: 'Reem Kufi', sans-serif; */
   color: #efb83a;
   padding-top: 1em;
-  font-size: 4em;
+  font-size: 6em;
 }
 .img-responsive{
   height: auto;
@@ -101,6 +103,10 @@ body {
   100% {
     background-position: 0 -50px;
   }
+}
+
+#pizzatime {
+  display: none;
 }
 
 @media (max-width: 480px) {
