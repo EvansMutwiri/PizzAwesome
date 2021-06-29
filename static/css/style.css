@@ -17,7 +17,8 @@ body {
 
 .navbar {
   background-color: #282f3b25;
-  color: #efb83a;
+  color: #ffffff;
+  font-size: 1.8em;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -31,10 +32,10 @@ body {
   padding: 0px 30px 0px 0px;
 }
 .navbar ul li a {
-  color: #efb83a;
+  color: #ffffff;
   margin: 10px 0px 0px 10px;
-  text-transform: uppercase;
-  font-size: 12px;
+  /* text-transform: uppercase; */
+  font-size: 1em;
 }
 .navbar ul li a .fas {
   padding-right: 5px;
